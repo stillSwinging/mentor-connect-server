@@ -31,7 +31,7 @@ app.get('/', (request, response) => {
 });
 
 //Route for handling userInfo.json requests (VP 6/19/2022)
-app.get('/userInfo', (request, response) => {
+app.get('./data/userInfo', (request, response) => {
   const type = request.query.type;
   console.log('type of user requested: ', type);
   const resultingUserList = new UserListByType(type);

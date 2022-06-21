@@ -1,17 +1,19 @@
 'use strict';
 const mongoose = require('mongoose');
 
-const userInfoSchema = new mongoose.Schema({
-  ID: { type: Number, required: true },
+const userInfoSchema = new mongoose.Schema(
+  {
   type: { type: String, required: true },
-  userDetails: [
-    firstName = { type: String, required: true },
-    lastName = { type: String, required: true },
-    YOB = { type: Date, required: true },
-    email = { type: String, required: true },
-    avatar = { type: URL, required: true },
-    bio = { type: String, required: true },
-    note = { type: String, required: false }
+    userDetails: [
+      {
+        firstName: { type: String, required: true },
+        lastName: { type: String, required: true },
+        YOB: { type: String, required: true },
+        email: { type: String, required: true },
+        avatar: { type: String, required: true },
+        bio: { type: String, required: true },
+        note: { type: String, required: false }
+      }
   ]
 });
 
