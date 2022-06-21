@@ -16,47 +16,56 @@ Minimum Viable Product (MVP) definition. What is the minimum required for you to
 
 The app would have to display an authenticated user profile as well as match options from our database. Mentors previously worked with will be displayed upon login.
 
-Getting Started
+### Getting Started
 In order to build this app on their own machine and get it running, user should:
 
 clone the github repo locally
 create a .env and seed it with a MongoDB connection link and password
 npm install
-npm start (to launch)
+npm install --save-dev nodemon
+npm start (to launch frontend)
+nodemon (to launch backend)
+npm install @auth0/auth0-react
+npm install react-icons
 npm i mongoose
 npm seed.js (to send seed data for testing)
 Architecture
 Technologies used: JSx, JavaScript, React-Bootstrap, Localhost, GitHub, Netlify (client deployment), Heroku (server deployment), expressJS, node.js, MongoDB, Mongoose, axios.
 
-User Stories
-Title - One
-User Story sentence - As a parental user I want to ensure the safety of my child.
-Feature Tasks - We will implement kid friendly avatars instead of photographs on user profile.
-Acceptance Tests - Ensure that API supplied avatars are rending properly on the profile.
-Title - Two
-User Story sentence - As a user I want to see my past sessions when I log into my app.
-Feature Tasks - Implement Auth0 so that user only sees their information from the data base on login.
-Acceptance Tests - Dev team members log into authenticated sessions and confirm theyre only seeing relevent information.
-Title - Three
-User Story sentence - As a user I want to be able to schedule future sessions with a mentor.
-Feature Tasks - Implement scheduling solution - TBD. That allows user to select from mentors availibility times.
-Acceptance Tests - Dev team members logging in.
-Title - Four
-User Story sentence - As a user I would to be able to select my mentor from a listing of available mentors and time schedules.
-Feature Tasks - Implement accordion containing mentor avatar, name and next avaliable session.
-Acceptance Tests - Dev member schedle sessions with dummy seed data.
-Title - Five
-User Story sentence - As a user I would like to encounter an aesthetically pleasing app environment
-Feature Tasks - Implement attractive bootstrap styling
-Acceptance Tests - Collect feedback from our practice sessions, and adjust accordingly.
-Wireframe, Data, and Domain Models
-Wireframe
+### User Stories
+### Title - One
+- User Story sentence - As a parental user I want to ensure the safety of my child.
+- Feature Tasks - We will implement kid friendly avatars instead of photographs on user profile.
+- Acceptance Tests - Ensure that API supplied avatars are rending properly on the profile.
 
-Data Schema Draft 2
+### Title - Two
+- User Story sentence - As a user I want to see my past sessions when I log into my app.
+- Feature Tasks - Implement Auth0 so that user only sees their information from the data base on login.
+- Acceptance Tests - Dev team members log into authenticated sessions and confirm theyre only seeing relevent information. 
 
-Domain Model Frontend
+### Title - Three
+- User Story sentence - As a user I want to be able to schedule future sessions with a mentor.
+- Feature Tasks - Implement scheduling solution - TBD. That allows user to select from mentors availibility times.
+- Acceptance Tests - Dev team members logging in.
 
-Domain Model Backend
+### Title - Four
+- User Story sentence - As a user I would to be able to select my mentor from a listing of available mentors and time schedules.
+- Feature Tasks - Implement accordion containing mentor avatar, name and next avaliable session.
+- Acceptance Tests - Dev member schedle sessions with dummy seed data.
+
+### Title - Five
+- User Story sentence - As a user I would like to encounter an aesthetically pleasing app environment
+- Feature Tasks - Implement attractive bootstrap styling
+- Acceptance Tests - Collect feedback from our practice sessions, and adjust accordingly.
+
+### Wireframe, Data, and Domain Models
+[Wireframe](wireframe.jpg)
+
+[Data Schema Draft 2](dataModels_draft3.jpg)
+
+[Domain Model Frontend](domainModelFrontend.jpg)
+
+[Domain Model Backend](domainModelBackend.jpg)
 
 Change Log
 6/14/2022: initiated project, started wireframing, data, and domain modeling 6/15/2022: created client repo and initiated setup, collaborated on design, color, and accessibility goals 6/16/2022: created server, started coding frontend
