@@ -4,9 +4,14 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-
 const app = express();  // this instantiates a new express server (VP)
 
+// mongoose  -- based on source code shared in lecture
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGODB_CONNECT);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', () => console.log('We are connected to Mongo Atlas!'));
 
 // VP - making an api call to MultiAvatar using axios
 // const url = `https://api.multiavatar.com/Starcrasher.png?apikey=${process.env.MY_API_KEY}`;
@@ -20,7 +25,7 @@ app.use(cors());
 //Local imports
 const PORT = process.env.PORT || 3002;
 
-//Test route
+//Test route (MQR)
 app.get('/test', (request, response) => {
   response.send('testing testing... is this thing on?');
 });
