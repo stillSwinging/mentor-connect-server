@@ -9,7 +9,8 @@
             "YOB": 1963,
             "email": "blsisko.starfleet.com",
             "avatar": "https://www.extremetech.com/wp-content/uploads/2020/10/Sisko-Feature-640x353.jpg",
-            "interest": "I am currently Commanding Deep Space Nine (formerly Terrok Nor) in the Gamma Quadrant."
+            "interest": "I am currently Commanding Deep Space Nine (formerly Terrok Nor) in the Gamma Quadrant.",
+            "timeZone": "Pacific"
           }
         ]
       },
@@ -22,7 +23,9 @@
             "YOB": 1983,
             "email": "katejaneway@starfleet.com",
             "avatar": "https://cdn.cnn.com/cnnnext/dam/assets/220131174124-bruno-encanto-super-169.jpeg",
-            "interest": "I made a wrong turn into the Delta Quadrant. Could somone please feed my dog."
+            "interest": "I made a wrong turn into the Delta Quadrant. Could somone please feed my dog.",
+            "timeZone": "Eastern"
+
           }
         ]
       },
@@ -35,7 +38,9 @@
             "YOB": 1993,
             "email": "posaga6604@qqhow.com",
             "avatar": "https://static.wikia.nocookie.net/memoryalpha/images/6/6d/Jake_Sisko%2C_2369.jpg",
-            "interest": "Hi! My name is Jake. My dad is was the Commander of a space station until he got yoinked up into the upside down by some aliens. I thought I wanted to be a writer but now I just want to learn all about temporal physics so I can get my dad back. I am hoping to learn what things I should study now to get me into a leading Starfleet temporal dynamics lab."
+            "interest": "Hi! My name is Jake. My dad is was the Commander of a space station until he got yoinked up into the upside down by some aliens. I thought I wanted to be a writer but now I just want to learn all about temporal physics so I can get my dad back. I am hoping to learn what things I should study now to get me into a leading Starfleet temporal dynamics lab.",
+            "timeZone": "Mountain"
+
           }
         ]
       },
@@ -48,7 +53,9 @@
             "YOB": 1973,
             "email": "bruno@someemail.com",
             "avatar": "https://cdn.cnn.com/cnnnext/dam/assets/220131174124-bruno-encanto-super-169.jpeg",
-            "interest": "Noone ever wants to talk about me. I don't know why, I'm a pretty nice guy and the looks decent wagon didn't pass me by."
+            "interest": "Noone ever wants to talk about me. I don't know why, I'm a pretty nice guy and the looks decent wagon didn't pass me by.",
+            "timeZone": "Central"
+
           }
         ]
       }

@@ -24,9 +24,8 @@ async function seedUsers() {
         YOB: '2200',
         email: 'john.crusher@email.com',
         avatar: 'http://hello.com/immacutie.jpg',
-        bio: 'I really like wearing my red shirt on away missions.',
-        note: 'Jean-Luc has my back!',
-        // VP - reminder to self: update the data models to reflect this boolean as a key/value pair on both mentorInfoSchema and studentInfoSchema
+        interest: 'I really like wearing my red shirt on away missions.',
+        timeZone: 'Eastern'
       }
     ]
   });
@@ -40,9 +39,8 @@ async function seedUsers() {
         YOB: '2225',
         email: 'wesley.crusher@email.com',
         avatar: 'http://hello.com/imshort.jpg',
-        bio: 'We are Starfleet, we do not lie!',
-        note: 'Life is going to be so bitter after this.',
-        // VP - reminder to self: update the data models to reflect this boolean as a key/value pair on both mentorInfoSchema and studentInfoSchema
+        interest: 'We are Starfleet, we do not lie!',
+        timeZone: 'Central'
       }
     ]
   });
@@ -56,9 +54,23 @@ async function seedUsers() {
         YOB: '2052',
         email: 'Joran.Curzon.Jadzia.Dax@email.com',
         avatar: 'http://hello.com/iamsomany.jpg',
-        bio: 'the old man sometimes wants to kill',
-        note: 'let us play tonga',
-        // VP - reminder to self: update the data models to reflect this boolean as a key/value pair on both mentorInfoSchema and studentInfoSchema
+        interest: 'The old man sometimes wants to kill.',
+        timeZone: 'Pacific'
+      }
+    ]
+  });
+
+  await userModel.create({
+    type: "student",
+    userDetails: [
+      {
+        firstName: 'Samantha',
+        lastName: 'Wildman',
+        YOB: '2248',
+        email: 'samantha.wildman@clubktarian.com',
+        avatar: 'http://hello.com/imadorbz.jpg',
+        interest: 'I want to learn how to create presents for my virtual forest friends!',
+        timeZone: 'Mountain'
       }
     ]
   });
