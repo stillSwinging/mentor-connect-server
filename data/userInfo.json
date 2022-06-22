@@ -4,7 +4,6 @@
         "type": "mentor",
         "userDetails": [
           {
-            "ID": 1985461,
             "firstName": "Benjamin",
             "lastName": "Sisko",
             "YOB": 1963,
@@ -18,7 +17,6 @@
         "type": "mentor",
         "userDetails": [
           {
-            "ID": 1237572,
             "firstName": "Kathryn",
             "lastName": "Janeway",
             "YOB": 1983,
@@ -32,7 +30,6 @@
         "type": "student",
         "userDetails": [
           {
-            "ID": 1984561,
             "firstName": "Jake",
             "lastName": "Sisko",
             "YOB": 1993,
@@ -46,7 +43,6 @@
         "type": "student",
         "userDetails": [
           {
-            "ID": 1984572,
             "firstName": "Bruno",
             "lastName": "Guy",
             "YOB": 1973,
