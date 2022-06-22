@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 
 const userInfoSchema = new mongoose.Schema(
   {
-  type: { type: String, required: true },
+    type: { type: String, required: true },
     userDetails: [
       {
         firstName: { type: String, required: true },
@@ -11,11 +11,11 @@ const userInfoSchema = new mongoose.Schema(
         YOB: { type: String, required: true },
         email: { type: String, required: true },
         avatar: { type: String, required: true },
-        bio: { type: String, required: true },
-        note: { type: String, required: false }
+        interest: { type: String, required: true },
+        timeZone: { type: String, required: false }
       }
-  ]
-});
+    ]
+  });
 
 // using the schema above we can now create a user model
 
