@@ -39,6 +39,46 @@
         "avatar": "https://cdn.cnn.com/cnnnext/dam/assets/220131174124-bruno-encanto-super-169.jpeg",
         "interest": "Noone ever wants to talk about me. I don't know why, I'm a pretty nice guy and the looks decent wagon didn't pass me by.",
         "timeZone": "Central"
+      },
+      {
+        "type": "mentor",
+        "firstName": "Regana",
+        "lastName": "Tosh",
+        "YOB": "2312",
+        "email": "smuggles@markaliaprime.com",
+        "avatar": "chin ridges are in this year",
+        "interest": "Covert logistics.",
+        "timeZone": "Mountain" 
+      },
+      {
+        "type": "mentor",
+        "firstName":"Dmar" ,
+        "lastName": "Cardassianson",
+        "YOB": "2302",
+        "email": "damar.cardassianson",
+        "avatar": "I don't get paid enough for this.",
+        "interest": "Upper middle management.",
+        "timeZone": "Eastern"
+      },
+       {
+        "type": "student",
+        "firstName": "Ziyal",
+        "lastName": "Tora",
+        "YOB": "2364",
+        "email": "tora.ziyal@cardassiaprime.com",
+        "avatar": "Rough starts happen.",
+        "interest": "Interspecies diplomacy.",
+        "timeZone": "Pacific"
+      },
+      {
+        "type": "student",
+        "firstName": "Five",
+        "lastName": "Weyoun",
+        "YOB": "2400",
+        "email": "five.weyoun@vortania.com",
+        "avatar": "so much the same",
+        "interest": "Shiny lights.",
+        "timeZone": "Eastern"
       }
     ]
   }
