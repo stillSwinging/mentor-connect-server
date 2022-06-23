@@ -17,4 +17,15 @@ async function getUsers (request, response, next) {  //next passes control on to
   }
 }
 
+// started drafting createUser method -incomplete (VP)
+// async function createUser(request, response, next) { 
+//   try {
+//     const newUser = await userModel.
+//   }
+//   catch (error) {
+//     console.error(error);
+//     next(error);
+//   }
+// }
+
 module.exports = getUsers;
