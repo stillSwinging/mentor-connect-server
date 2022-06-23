@@ -15,4 +15,11 @@ app.get('/test', (request, response) => {
 
 })
 
+app.get('/avatar', (request, response) => {
+  let avatarId = 'Binx Bond' //request.query.username
+  fetch('https://api.multiavatar.com/' + JSON.stringify(avatarId))
+    .then(response => response.text())
+    .then(svg => console.log(svg))
+})
+
 app.listen(PORT, () => console.log(`listening on ${PORT}`));
