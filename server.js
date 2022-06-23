@@ -4,9 +4,9 @@
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
-
+const getUsers = require('./modules/handlers');
+const 
 const app = express();  // this instantiates a new express server (VP)
-
 
 // VP - making an api call to MultiAvatar using axios
 // const url = `https://api.multiavatar.com/Starcrasher.png?apikey=${process.env.MY_API_KEY}`;
@@ -14,11 +14,23 @@ const app = express();  // this instantiates a new express server (VP)
 // console.log(axiosResults.data);
 
 
+// mongoose code added back from userInfoSeed.js (VP)
+const mongoose = require('mongoose');
+mongoose.connect(process.env.MONGODB_CONNECT);
+const db = mongoose.connection;
+db.on('error', console.error.bind(console, 'connection error:'));
+db.once('open', function () {
+  console.log('Your Special Ops Mongeese have infiltrated Atlas!');
+});
+
 //middleware
 app.use(cors());
 
 //Local imports
 const PORT = process.env.PORT || 3002;
+
+// GET route for the handler
+app.get('../data/userInfo', getUsers);    //this has been fiddled with
 
 //Test route
 app.get('/test', (request, response) => {
@@ -45,7 +57,10 @@ class UserListByType {  // This filters the userInfo.json data by user type (VP 
     this.userDetails = UserListByType.userList.data.filter(infoObj => infoObj.type === type);
   }
 }
-
+// This is express errror handling (facilitated by cors) - this must be the LAST app.use in the file -it's a rule
+app.use((error, request, response, next) => {
+  response.status(500).send(`Something went wrong on our end... but Vida didn't do it! ${error.message}`);
+});
 
 //PORT check in, always has to be last thing on file
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
