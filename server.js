@@ -53,5 +53,15 @@ app.use((error, request, response, next) => {
   response.status(500).send(`Something went wrong on our end... but Vida didn't do it! ${error.message}`);
 });
 
+
+app.get('/avatar', (request, response) => {
+  let avatarId = 'Binx Bond' //request.query.username
+  fetch('https://api.multiavatar.com/' + JSON.stringify(avatarId))
+    .then(response => response.text())
+    .then(svg => console.log(svg))
+})
+
+
 //PORT check in, always has to be last thing on file
 app.listen(PORT, () => console.log(`listening on PORT ${PORT}`));
+
