@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "mongoose": "^6.4.0",
     "react-bootstrap": "^2.4.0",
+    "react-calendly": "^4.0.1",
     "server.js": "^1.0.0"
   },
   "devDependencies": {

@@ -8,7 +8,7 @@ const userInfoSchema = new mongoose.Schema(
     lastName: { type: String, required: true },
     YOB: { type: String, required: true },
     email: { type: String, required: true },
-    avatar: { type: String, required: true },
+    avatar: { type: String, required: false },
     interest: { type: String, required: true },
     timeZone: { type: String, required: false }
   }
